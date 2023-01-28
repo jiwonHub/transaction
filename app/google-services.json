@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "77598942225",
+    "firebase_url": "https://transactionapp-bbf19-default-rtdb.firebaseio.com",
+    "project_id": "transactionapp-bbf19",
+    "storage_bucket": "transactionapp-bbf19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77598942225:android:fe36a54d6c104100797db0",
+        "android_client_info": {
+          "package_name": "com.example.transactionapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77598942225-ute84lgipgsi8m13cjioaq8bb7oarr3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFWOeEBbsJOUSHvWRL3IOOX39S2IPxaX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77598942225-ute84lgipgsi8m13cjioaq8bb7oarr3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
