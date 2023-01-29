@@ -1,5 +1,6 @@
 package com.example.transactionapp.charList
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.transactionapp.DBKey.Companion.CHILD_CHAT
 import com.example.transactionapp.DBKey.Companion.DB_USERS
 import com.example.transactionapp.R
+import com.example.transactionapp.chatdetail.ChatRoomActivity
 import com.example.transactionapp.databinding.FragmentChatlistBinding
 import com.example.transactionapp.home.ArticleAdapter
 import com.google.firebase.auth.FirebaseAuth
@@ -31,8 +33,15 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         val fragmentChatlistBinding = FragmentChatlistBinding.bind(view)
         binding = fragmentChatlistBinding
 
-        chatListAdapter = ChatListAdapter( onItemClicked = {
+        chatListAdapter = ChatListAdapter( onItemClicked = { chatRoom ->
             // 채팅방으로 이동
+
+            context?.let {
+                val intent = Intent(it, ChatRoomActivity::class.java)
+                intent.putExtra("chatKey", chatRoom.key)
+                startActivity(intent)
+            }
+
         })
 
         chatRoomList.clear()
