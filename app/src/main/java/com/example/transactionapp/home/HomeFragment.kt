@@ -62,12 +62,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         fragmentHomeBinding.articleRecyclerView.layoutManager = LinearLayoutManager(context)
         fragmentHomeBinding.articleRecyclerView.adapter = articleAdapter
         fragmentHomeBinding.addFloatingButton.setOnClickListener {
-            //if(auth.currentUser != null){
+            if(auth.currentUser != null){
                 val intent = Intent(requireContext(), AddArticleActivity::class.java)
                 startActivity(intent)
-            //} else{
-           //     Snackbar.make(view, "로그인 후 사용해주세요.", Snackbar.LENGTH_LONG).show()
-            //}
+            } else{
+               Snackbar.make(view, "로그인 후 사용해주세요.", Snackbar.LENGTH_LONG).show()
+            }
         }
 
         articleDB.addChildEventListener(listener)

@@ -46,7 +46,7 @@ class AddArticleActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.imageAddButton).setOnClickListener {
             when {
-                ContextCompat.checkSelfPermission(
+                ContextCompat.checkSelfPermission( // 사진 갤러리 사용 권한 체크
                     this,
                     android.Manifest.permission.READ_EXTERNAL_STORAGE
                 ) == PackageManager.PERMISSION_GRANTED -> {
@@ -111,7 +111,7 @@ class AddArticleActivity : AppCompatActivity() {
             }
     }
 
-    private fun uploadArticle(sellerId: String, title: String, price: String, imageUri: String) {
+    private fun uploadArticle(sellerId: String, title: String, price: String, imageUri: String) { // 물품 업로드
         val model = ArticleModel(sellerId, title, System.currentTimeMillis(), "$price 원", imageUri)
         articleDB.push().setValue(model)
 
@@ -142,11 +142,11 @@ class AddArticleActivity : AppCompatActivity() {
         startActivityForResult(intent, 2020)
     }
 
-    private fun showProgress() {
+    private fun showProgress() { // 로딩창 o
         findViewById<ProgressBar>(R.id.progressBar).isVisible = true
     }
 
-    private fun hideProgress() {
+    private fun hideProgress() { // 로딩창 x
         findViewById<ProgressBar>(R.id.progressBar).isVisible = false
     }
 
@@ -175,7 +175,7 @@ class AddArticleActivity : AppCompatActivity() {
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
-    private fun showPermissionContextPopup() {
+    private fun showPermissionContextPopup() { // 권한 동의x 를 누른 후 띄워지는 팝업
         AlertDialog.Builder(this)
             .setTitle("권한이 필요합니다.")
             .setMessage("사진을 가져오기 위해 필요합니다.")
