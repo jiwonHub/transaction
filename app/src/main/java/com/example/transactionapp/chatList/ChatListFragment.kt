@@ -1,4 +1,4 @@
-package com.example.transactionapp.charList
+package com.example.transactionapp.chatList
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,6 @@ import com.example.transactionapp.DBKey.Companion.DB_USERS
 import com.example.transactionapp.R
 import com.example.transactionapp.chatdetail.ChatRoomActivity
 import com.example.transactionapp.databinding.FragmentChatlistBinding
-import com.example.transactionapp.home.ArticleAdapter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.*

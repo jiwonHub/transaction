@@ -1,4 +1,4 @@
-package com.example.transactionapp.charList
+package com.example.transactionapp.chatList
 
 data class ChatListItem(
     val buyId: String,

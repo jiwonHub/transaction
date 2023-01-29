@@ -10,7 +10,7 @@ import com.example.transactionapp.DBKey.Companion.CHILD_CHAT
 import com.example.transactionapp.DBKey.Companion.DB_ARTICLES
 import com.example.transactionapp.DBKey.Companion.DB_USERS
 import com.example.transactionapp.R
-import com.example.transactionapp.charList.ChatListItem
+import com.example.transactionapp.chatList.ChatListItem
 import com.example.transactionapp.databinding.FragmentHomeBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth

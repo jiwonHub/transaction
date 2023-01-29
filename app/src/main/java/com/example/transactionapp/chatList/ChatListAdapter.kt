@@ -1,4 +1,4 @@
-package com.example.transactionapp.charList
+package com.example.transactionapp.chatList
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,10 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.transactionapp.databinding.ItemArticleBinding
 import com.example.transactionapp.databinding.ItemChatListBinding
-import com.example.transactionapp.home.ArticleModel
-import java.text.SimpleDateFormat
 import java.util.*
 
 class ChatListAdapter(val onItemClicked: (ChatListItem) -> Unit): ListAdapter<ChatListItem, ChatListAdapter.ViewHolder>(diffUtil) {

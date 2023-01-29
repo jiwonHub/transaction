@@ -3,7 +3,7 @@ package com.example.transactionapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.transactionapp.charList.ChatListFragment
+import com.example.transactionapp.chatList.ChatListFragment
 import com.example.transactionapp.home.HomeFragment
 import com.example.transactionapp.myPage.MyPageFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
