@@ -15,7 +15,6 @@ class ChatItemAdapter : ListAdapter<ChatItem, ChatItemAdapter.ViewHolder>(diffUt
         fun bind(chatItem: ChatItem){
             binding.senderTextView.text = chatItem.senderId
             binding.messageTextView.text = chatItem.message
-
         }
     }
 

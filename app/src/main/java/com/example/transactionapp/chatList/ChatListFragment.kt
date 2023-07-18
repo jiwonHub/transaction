@@ -48,8 +48,6 @@ class ChatListFragment : Fragment(R.layout.fragment_chatlist) {
         fragmentChatlistBinding.chatListRecyclerView.adapter = chatListAdapter
         fragmentChatlistBinding.chatListRecyclerView.layoutManager = LinearLayoutManager(context)
 
-
-
         if(auth.currentUser == null){
             return
         }

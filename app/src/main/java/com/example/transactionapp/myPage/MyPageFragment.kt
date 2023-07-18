@@ -117,8 +117,6 @@ class MyPageFragment : Fragment(R.layout.fragment_mypage) {
             return
         }
 
-
-
         binding?.emailEditText?.isEnabled = false
         binding?.passwordEditText?.isEnabled = false
         binding?.signUpButton?.isEnabled = false

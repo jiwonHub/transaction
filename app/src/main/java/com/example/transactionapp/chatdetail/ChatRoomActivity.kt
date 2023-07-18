@@ -38,6 +38,7 @@ class ChatRoomActivity: AppCompatActivity() {
         chatDB = Firebase.database.reference.child(DB_CHAT).child("$chatKey")
 
         chatDB?.addChildEventListener(object : ChildEventListener{
+            @SuppressLint("NotifyDataSetChanged")
             override fun onChildAdded(snapshot: DataSnapshot, previousChildName: String?) {
                 val chatItem = snapshot.getValue(ChatItem::class.java)
                 chatItem ?: return

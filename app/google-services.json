@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "77598942225",
-    "firebase_url": "https://transactionapp-bbf19-default-rtdb.firebaseio.com",
-    "project_id": "transactionapp-bbf19",
-    "storage_bucket": "transactionapp-bbf19.appspot.com"
+    "project_number": "619963069523",
+    "firebase_url": "https://sns-upgrade-default-rtdb.firebaseio.com",
+    "project_id": "sns-upgrade",
+    "storage_bucket": "sns-upgrade.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:77598942225:android:fe36a54d6c104100797db0",
+        "mobilesdk_app_id": "1:619963069523:android:e2c6f1be974ee2c2eb82a6",
         "android_client_info": {
           "package_name": "com.example.transactionapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "77598942225-ute84lgipgsi8m13cjioaq8bb7oarr3u.apps.googleusercontent.com",
+          "client_id": "619963069523-t0n9c5u9ggodekmetdf23vqsntu92tn3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAFWOeEBbsJOUSHvWRL3IOOX39S2IPxaX0"
+          "current_key": "AIzaSyCwhzoPybBLAyIbSdgTs2aPMwb1Cl5yKcg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "77598942225-ute84lgipgsi8m13cjioaq8bb7oarr3u.apps.googleusercontent.com",
+              "client_id": "619963069523-t0n9c5u9ggodekmetdf23vqsntu92tn3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
